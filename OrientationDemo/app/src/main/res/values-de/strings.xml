@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Orinentierungs</string>
+    <string name="hello_portrait_mode">Guten Tag portrait mode!</string>
+    <string name="hello_landscape_mode">Guten Tag landscape mode!</string>
+</resources>

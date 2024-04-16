@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E3E0E0"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="420dp"
+        android:layout_height="50dp"
+        android:background="#BE101010"
+        android:backgroundTint="@android:color/background_dark"
+        android:fontFamily="serif"
+        android:includeFontPadding="true"
+        android:outlineAmbientShadowColor="#070707"
+        android:outlineSpotShadowColor="#070707"
+        android:paddingTop="9dp"
+        android:shadowColor="#090909"
+        android:text="    Currency Converter              "
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#DCFFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="0dp"
+        android:clickable="true"
+        android:contentDescription="menu"
+        android:contextClickable="true"
+        android:paddingTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/twotone_more_vert_24" />
+
+    <TextView
+        android:id="@+id/from_C"
+        android:layout_width="181dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="serif"
+        android:text="From value in"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#C6393838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <Spinner
+        android:id="@+id/spinner_1"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/from_C"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <Spinner
+        android:id="@+id/spinner_2"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/to_c"
+        app:layout_constraintTop_toBottomOf="@+id/input_1" />
+
+
+    <EditText
+        android:id="@+id/input_1"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="31dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:ems="10"
+        android:hint=". "
+        android:inputType="numberDecimal"
+        android:outlineAmbientShadowColor="#009688"
+        android:outlineSpotShadowColor="#009688"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:shadowColor="#009688"
+        android:textColor="#090909"
+        android:textColorHighlight="#009688"
+        android:textColorLink="#009688"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/from_C" />
+
+    <TextView
+        android:id="@+id/to_c"
+        android:layout_width="181dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="To value in"
+        android:textColor="#C6393838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_1" />
+
+
+
+    <android.widget.Button
+        android:id="@+id/button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btnbg"
+        android:text="CALCULATE"
+        android:paddingHorizontal="20dp"
+        android:textColor="#F6F6F6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/to_c" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal3"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@android:color/holo_purple"
+        android:ems="10"
+        android:hint=". "
+        android:inputType="numberDecimal"
+        android:textAlignment="viewEnd"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_1"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout> 
